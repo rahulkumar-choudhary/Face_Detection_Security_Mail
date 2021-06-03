@@ -38,7 +38,6 @@ def Security_mail():
     Date: '''+ddate+'''
     Time: '''+dtime
 
-
     msg.attach(MIMEText(body,'plain'))
 
     filename='image.jpg'
@@ -57,6 +56,7 @@ def Security_mail():
 
     server.sendmail(email_user,email_send,text)
     server.quit()
+    
     
 cap=cv2.VideoCapture(0)
 model=cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
