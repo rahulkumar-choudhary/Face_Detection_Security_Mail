@@ -2,6 +2,7 @@
 #Enter reciever mail ID in variable email_send
 #Enter password of the user mail ID in email_user_pass
 
+import cv2
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
