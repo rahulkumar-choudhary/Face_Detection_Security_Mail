@@ -2,7 +2,6 @@
 #Enter reciever mail ID in variable email_send
 #Enter password of the user mail ID in email_user_pass
 
-import cv2
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
@@ -14,8 +13,6 @@ from datetime import datetime
 
 
 def securityMail():
-    cv2.imwrite("image.jpg", cphoto)
-
     email_user='user@mail.com'
     email_send='reciver@mail.com'
     email_user_pass='PASSWORDXXXXXXXXXXXXXX'
