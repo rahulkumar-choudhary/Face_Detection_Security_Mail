@@ -11,6 +11,8 @@ from email import encoders
 from datetime import date
 from datetime import datetime
 
+now = datetime.now()
+today = date.today()
 
 def securityMail():
     email_user='user@mail.com'
@@ -18,26 +20,26 @@ def securityMail():
     email_user_pass='PASSWORDXXXXXXXXXXXXXX'
 
     subject= '⚠ Security Alert!! ⚠'
-
-    now = datetime.now()
-
+    
     msg=MIMEMultipart()
     msg['From']=email_user
     msg['To']=email_send
     msg['Subject']=subject
 
-    today = date.today()
-
     dtime= now.strftime("%H:%M:%S")
     ddate=today.strftime("%B %d, %Y")
 
     body = '''
-    ⚠ Security Alert! ⚠
-    Someone has been spotted in the camara.
+⚠ Security Alert! ⚠
+Someone has been spotted in the camara.
 
-    During:-
-    Date: '''+ddate+'''
-    Time: '''+dtime
+During:-
+Date: '''+ddate+'''
+Time: '''+dtime+'''
+
+Front face of the person in jpg format:
+
+'''
 
     msg.attach(MIMEText(body,'plain'))
 
