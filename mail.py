@@ -19,7 +19,7 @@ def securityMail():
 
     subject= '⚠ Security Alert!! ⚠'
 
-    current_time=datetime.datetime.now()
+    now = datetime.now()
 
     msg=MIMEMultipart()
     msg['From']=email_user
