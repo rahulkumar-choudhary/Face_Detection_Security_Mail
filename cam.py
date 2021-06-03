@@ -23,3 +23,6 @@ def capture():
           cv2.imshow('hi',aphoto)
           if cv2.waitKey(10)==13:
               break
+
+  cv2.destroyAllWindows()
+  cap.release()              
