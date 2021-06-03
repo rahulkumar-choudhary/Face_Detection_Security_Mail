@@ -19,7 +19,8 @@ def capture():
               aphoto=cv2.rectangle(photo, (x1,y1),(x2,y2),[0,255,0],5)
 
               cphoto=photo[x1:x2, y1:y2]
-
+              cv2.imwrite("image.jpg", cphoto)
+              
           cv2.imshow('hi',aphoto)
           if cv2.waitKey(10)==13:
               break
