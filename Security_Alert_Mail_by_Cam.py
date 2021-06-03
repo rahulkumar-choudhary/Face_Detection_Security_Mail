@@ -12,9 +12,9 @@ from email import encoders
 def Security_mail():
     cv2.imwrite("image.jpg", cphoto)
 
-    email_user='stest5686@gmail.com'
-    email_send='stest5686@gmail.com'
-    email_user_pass='testsecuritycv2'
+    email_user='user@mail.com'
+    email_send='reciver@mail.com'
+    email_user_pass='PASSWORDXXXXXXXXXXXXXX'
 
     subject= '⚠ Security Alert!! ⚠'
 
